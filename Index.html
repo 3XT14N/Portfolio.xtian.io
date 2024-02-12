@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christian Bobadilla - Portfolio</title>
+    <link rel="stylesheet" href="Portfolio.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <button id="scrollToTopBtn" onclick="scrollToTop()" title="Go to top">Top</button>
+        <section id="home" class="section">
+            <div class="container">
+                <h1>Hi! I'm Christian Bobadilla.</h1>
+                <img class="profile-img" src="project.jpg" alt="Christian Bobadilla">
+            </div>
+        </section>
+        <section id="about" class="section">
+            <div class="container">
+                <h2>About Me</h2>
+                <p>
+                   Hello! I'm Christian Bobadilla, an experienced backend developer with a versatile skill set spanning multiple programming languages and technologies. With a strong foundation in languages like C++, C#, Java, Python, and PHP, I specialize in architecting and implementing backend systems for a variety of applications.<br>
+                   
+                   My expertise extends to frameworks such as ASP.NET, Android Studio, and Django, where I leverage their capabilities to develop robust and scalable solutions tailored to client requirements. I have a proven track record of designing efficient data access layers, implementing complex business logic, and integrating backend systems with various databases.<br>
+                   
+                   In terms of database management, I'm proficient in SQL Server, MySQL Workbench, and phpMyAdmin, where I've designed schemas, optimized queries, and ensured data integrity across diverse projects. Additionally, I have experience working with NoSQL databases like Firebase, enabling me to develop real-time data-driven applications with ease.<br>
+
+                   Beyond backend development, I have a solid understanding of front-end technologies like JavaScript, HTML, and CSS, allowing me to collaborate effectively on full-stack projects. My comprehensive skill set and experience across the software development lifecycle make me a valuable asset to any team.<br>
+
+                   Let's connect and leverage my expertise to bring your projects to fruition!</p>
+            </div>
+        </section>
+        <section id="services" class="section">
+            <div class="container">
+                <h2>Services</h2>
+                <div class="service">
+                    <h3>Backend Development</h3>
+                    <p>As a backend developer, I offer expertise in designing, developing, and maintaining robust backend systems tailored to your specific needs. From database management to business logic implementation, I ensure seamless performance and scalability for your applications.</p>
+                </div>
+                <div class="service">
+                    <h3>Full-Stack Development</h3>
+                    <p>With proficiency in both frontend and backend technologies, I provide comprehensive full-stack development services. From user interface design to server-side logic, I deliver end-to-end solutions that meet your project requirements and exceed expectations.</p>
+                </div>
+                <div class="service">
+                    <h3>Database Management</h3>
+                    <p>Effective database management is crucial for the success of any application. I offer expertise in designing database schemas, optimizing queries, and ensuring data integrity to maximize performance and reliability of your database-driven applications.</p>
+                </div>
+            </div>
+        </section>
+        <section id="skills" class="section">
+            <div class="container">
+                <h2>Skills</h2>
+                <div class="skill">
+                    <h3>C++</h3>
+                    <div class="skill-meter">
+                        <div class="skill-level" style="width: 90%;">90%</div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3>Python</h3>
+                    <div class="skill-meter">
+                        <div class="skill-level" style="width: 80%;">80%</div>
+                    </div>
+                </div>
+                <!-- Add more skills with corresponding skill levels -->
+                <div class="skill">
+                    <h3>Java</h3>
+                    <div class="skill-meter">
+                        <div class="skill-level" style="width: 85%;">85%</div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3>SQL</h3>
+                    <div class="skill-meter">
+                        <div class="skill-level" style="width: 75%;">75%</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="projects" class="section">
+            <div class="container">
+                <h2>Projects</h2>
+                <div class="project">
+                    <h3>Smart Greenhouse</h3>
+                    <img src="smartgreenhouse.jpg" alt="Smart Greenhouse">
+                    <p>The SmartGreenhouse project is a pioneering agricultural initiative that merges advanced technology with traditional greenhouse cultivation methods, now extended to mobile platforms. It optimizes plant growth and resource management through features like automated climate control, smart irrigation, and predictive analytics. Mobile capabilities enable remote monitoring and control, empowering farmers to manage operations from anywhere. Renewable energy integration and crop monitoring enhance sustainability, while scalability ensures adaptability to different needs. Ultimately, SmartGreenhouse fosters higher productivity, resource efficiency, and environmental stewardship in greenhouse agriculture.</p>
+                </div>
+                <div class="project">
+                    <h3>ProjectForge</h3>
+                    <img src="projectforge.jpg" alt="ProjectForge">
+                    <p>ProjectForge is a robust project management application developed using C# with Windows Forms for the user interface and SQL Server as the backend database. It provides a comprehensive solution for planning, executing, and monitoring projects effectively. The user interface is designed to be intuitive, allowing users to create projects, manage tasks, allocate resources, track progress, and generate reports seamlessly. The backend logic, implemented in C#, handles business rules, data manipulation, and integration with the SQL Server database. A data access layer ensures efficient database interactions and separation of concerns. ProjectForge offers features such as collaborative task management, document sharing, progress tracking, and customizable reporting. It is scalable, accessible from any device with an internet connection, and supports integration with other productivity tools. Overall, ProjectForge empowers teams and organizations with the tools they need to achieve project success efficiently and effectively.</p>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="section">
+            <div class="container">
+                <h2>Contact</h2>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Christian Bobadilla</p>
+        </div>
+    </footer>
+    <script src="Portfolio.js"></script>
+</body>
+</html>
